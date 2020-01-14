@@ -1,0 +1,1444 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 1172px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "SuzukiPRORegular", sans-serif;
+  font-style: normal;
+  color: #ffffff;
+}
+
+body .content {
+  max-width: 2040px;
+  height: 745px;
+}
+
+body .content header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 8px;
+}
+
+body .content header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 555px;
+  height: 36px;
+}
+
+body .content header .logo a {
+  display: inline-block;
+  width: 170px;
+  height: 33px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+body .content header .logo a.avtopole {
+  background-image: url(../logo/avtopole_logo.png);
+  background-size: contain;
+}
+
+body .content header .logo a.suzuki {
+  background-image: url(../logo/suzuki_logo.png);
+  background-size: contain;
+}
+
+body .content header .logo p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 130%;
+  color: #000000;
+}
+
+body .content header .contacts a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 130%;
+  color: #000000;
+}
+
+body .content header .contacts p {
+  font-size: 14px;
+  text-align: right;
+  font-weight: normal;
+  line-height: 130%;
+  color: #005AAD;
+}
+
+body .content-slider {
+  position: relative;
+  width: 1920px;
+  height: 695px;
+  left: 37px;
+  overflow: hidden;
+  margin-top: 17px;
+}
+
+body .content-slider-box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: -100%;
+}
+
+body .content-slider-box-item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 695px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body .content-slider-box-item::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.42);
+}
+
+body .content-slider-box-item:nth-child(2n) {
+  background-image: url(../background/Suzuki_banner01.png);
+}
+
+body .content-slider-box-item:nth-child(3n) {
+  background-image: url(../background/Suzuki_banner02.png);
+}
+
+body .content-slider-box-item-info {
+  position: absolute;
+  top: 93px;
+  left: 361px;
+}
+
+body .content-slider-box-item-info h3 {
+  font-weight: normal;
+  font-size: 38.5174px;
+  line-height: 130%;
+  margin-bottom: 47px;
+}
+
+body .content-slider-box-item-info h1 {
+  font-weight: bold;
+  font-size: 88.7579px;
+  line-height: 130%;
+}
+
+body .content-slider-box-item-info button {
+  width: 270px;
+  height: 66px;
+  background: #005AAD;
+  border-radius: 2px;
+  margin-top: 16px;
+  font-weight: normal;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 130%;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+}
+
+body .content-slider-bullets {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 580px;
+  left: 416px;
+  cursor: pointer;
+}
+
+body .content-slider-bullets-item {
+  width: 70px;
+  height: 2px;
+  background: #ffffff;
+  margin-right: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .content-slider-bullets-item.active {
+  background: #005AAD;
+}
+
+@media (max-width: 1920px) {
+  body .content-slider {
+    width: 1840px;
+  }
+}
+
+@media (max-width: 1680px) {
+  body .content-slider {
+    width: 95%;
+  }
+}
+
+@media (max-width: 1600px) {
+  body .content-slider {
+    width: 96%;
+  }
+  body .content-slider-box-item-info {
+    left: 100px;
+  }
+  body .content-slider-bullets {
+    left: 100px;
+  }
+}
+
+@media (max-width: 1366px) {
+  body .content-slider-box-item-info {
+    left: 100px;
+  }
+  body .content-slider-bullets {
+    left: 100px;
+  }
+}
+
+@media (max-width: 1024px) {
+  body .content-slider {
+    width: 100%;
+    left: 0;
+  }
+  body .content-slider-box-item-info h3 {
+    margin-bottom: 15px;
+  }
+  body .content-slider-box-item-info h1 {
+    font-size: 67.7579px;
+  }
+  body .content-slider-bullets {
+    left: 100px;
+  }
+}
+
+@media (max-width: 823px) {
+  body .content-slider {
+    width: 100%;
+    left: 0;
+  }
+  body .content-slider-box-item-info {
+    left: 10px;
+  }
+  body .content-slider-box-item-info button {
+    width: 210px;
+    margin-top: 50px;
+  }
+  body .content-slider-bullets {
+    top: 387px;
+    left: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  body .content-slider {
+    width: 100%;
+    left: 0;
+  }
+  body .content-slider-box-item-info {
+    top: 150px;
+    left: 10px;
+  }
+  body .content-slider-box-item-info button {
+    width: 210px;
+  }
+  body .content-slider-bullets {
+    left: 10px;
+    top: 500px;
+  }
+}
+
+@media (max-width: 568px) {
+  body .content-slider {
+    width: 100%;
+  }
+  body .content-slider-box-item-info h1 {
+    font-size: 50.7579px;
+  }
+}
+
+@media (max-width: 568px) {
+  body .content-slider {
+    width: 100%;
+  }
+  body .content-slider-box-item-info h3 {
+    font-size: 33.5174px;
+  }
+  body .content-slider-box-item-info h1 {
+    font-size: 33.5174px;
+    text-align: center;
+  }
+  body .content-slider-box-item-info button {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 736px) {
+  body .content {
+    height: auto;
+  }
+  body .content header {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .content header .logo {
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  body .content header .contacts {
+    margin-top: 10px;
+  }
+  body .content-slider-bullets {
+    top: 500px;
+  }
+}
+
+@media (max-width: 414px) {
+  body .content {
+    max-width: 100%;
+  }
+  body .content header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .content header .logo {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  body .content header .logo p {
+    display: none;
+  }
+  body .content-slider {
+    width: 100%;
+  }
+  body .content-slider-box-item-info {
+    top: 100px;
+  }
+  body .content-slider-box-item-info h1 {
+    font-size: 46.7579px;
+    text-align: center;
+  }
+  body .content-slider-bullets {
+    top: inherit;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 375px) {
+  body .content {
+    max-width: 100%;
+  }
+  body .content header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .content header .logo {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  body .content header .logo p {
+    display: none;
+  }
+  body .content-slider {
+    width: 100%;
+  }
+  body .content-slider-box-item-info {
+    top: 100px;
+  }
+  body .content-slider-box-item-info h1 {
+    font-size: 46.7579px;
+    text-align: center;
+  }
+  body .content-slider-bullets {
+    top: inherit;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+    margin: 0 auto;
+  }
+}
+
+body .feature {
+  max-width: 2040px;
+  height: 413px;
+  background: #EBEBEB;
+}
+
+body .feature-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .feature-box-vitara {
+  position: relative;
+  width: 570px;
+  height: 370px;
+  margin-top: 43px;
+}
+
+body .feature-box-vitara::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #FFFFFF;
+  opacity: 0.54;
+}
+
+body .feature-box-vitara p {
+  position: absolute;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 130%;
+  text-align: center;
+  color: #005AAD;
+  z-index: 2;
+  top: 59px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+body .feature-box-vitara-pic {
+  position: absolute;
+  width: 346.51px;
+  height: 275px;
+  top: 88px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: #FFFFFF url(../Suzuki/Suzuki_vitara01.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+body .feature-box-sx4 {
+  position: relative;
+  width: 570px;
+  height: 370px;
+  margin-top: 43px;
+}
+
+body .feature-box-sx4 p {
+  position: absolute;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 130%;
+  text-align: center;
+  color: #000000;
+  top: 59px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+body .feature-box-sx4-pic {
+  position: absolute;
+  width: 337.81px;
+  height: 220px;
+  top: 127px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: url(../Suzuki/Suzuki_SX4.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+@media (max-width: 1920px) {
+  body .feature {
+    max-width: 1920px;
+  }
+}
+
+@media (max-width: 667px) {
+  body .feature-box-vitara {
+    width: 333.5px;
+  }
+  body .feature-box-vitara-pic {
+    width: 229.51px;
+  }
+  body .feature-box-sx4 {
+    width: 333.5px;
+  }
+  body .feature-box-sx4-pic {
+    width: 229.51px;
+  }
+}
+
+@media (max-width: 568px) {
+  body .feature-box-vitara {
+    width: 333.5px;
+  }
+  body .feature-box-vitara-pic {
+    width: 260.51px;
+  }
+  body .feature-box-sx4 {
+    width: 333.5px;
+  }
+  body .feature-box-sx4-pic {
+    width: 260.51px;
+  }
+}
+
+@media (max-width: 414px) {
+  body .feature {
+    height: auto;
+  }
+  body .feature-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .feature-box-vitara {
+    width: 100%;
+  }
+  body .feature-box-vitara-pic {
+    width: 360.51px;
+  }
+  body .feature-box-sx4 {
+    width: 100%;
+  }
+  body .feature-box-sx4-pic {
+    width: 360.51px;
+  }
+}
+
+@media (max-width: 411px) {
+  body .feature {
+    height: auto;
+  }
+  body .feature-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .feature-box-vitara {
+    width: 100%;
+  }
+  body .feature-box-vitara-pic {
+    width: 375.51px;
+  }
+  body .feature-box-sx4 {
+    width: 100%;
+  }
+  body .feature-box-sx4-pic {
+    width: 375.51px;
+  }
+}
+
+@media (max-width: 375px) {
+  body .feature {
+    height: auto;
+  }
+  body .feature-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .feature-box-vitara {
+    width: 100%;
+  }
+  body .feature-box-sx4 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  body .feature {
+    height: auto;
+  }
+  body .feature-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .feature-box-vitara {
+    width: 100%;
+  }
+  body .feature-box-vitara-pic {
+    width: 330.51px;
+  }
+  body .feature-box-sx4 {
+    width: 100%;
+  }
+  body .feature-box-sx4-pic {
+    width: 330.51px;
+  }
+}
+
+@media (max-width: 320px) {
+  body .feature-box-vitara-pic {
+    width: 295.51px;
+  }
+  body .feature-box-sx4-pic {
+    width: 295.51px;
+  }
+}
+
+body main .price {
+  max-width: 2040px;
+  height: auto;
+}
+
+body main .price-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 82px;
+}
+
+body main .price-box h1 {
+  font-family: SuzukiPROHeadline;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 130%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  padding-top: 93px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+body main .price-box-container {
+  width: 270px;
+  height: 383px;
+  margin-top: 59px;
+  margin-right: 23px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body main .price-box-container h3 {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 130%;
+  text-align: center;
+  color: #222222;
+}
+
+body main .price-box-container img {
+  width: 100%;
+}
+
+body main .price-box-container-info {
+  width: 100%;
+}
+
+body main .price-box-container-info p {
+  font-family: Suwannaphum;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  color: #979797;
+  letter-spacing: 1.2px;
+}
+
+body main .price-box-container-info .more_details {
+  width: 100%;
+  height: 32.5px;
+  border: 1px solid #005AAD;
+  font-family: Suwannaphum;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 27px;
+  text-align: center;
+  color: #005AAD;
+  cursor: pointer;
+  outline: none;
+  background: #ffffff;
+  margin-bottom: 5px;
+  margin-top: 16px;
+}
+
+body main .price-box-container-info .buy {
+  width: 100%;
+  height: 32.5px;
+  background: #005AAD;
+  font-family: SuzukiPROHeadline;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+  cursor: pointer;
+  outline: none;
+}
+
+@media (max-width: 1024px) {
+  body main .price-box {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 823px) {
+  body main .price-box {
+    margin-top: 30px;
+  }
+  body main .price-box-container {
+    width: 420px;
+    height: auto;
+    margin-top: 30px;
+    margin-right: 0;
+  }
+  body main .price-box-container-info {
+    text-align: center;
+  }
+}
+
+@media (max-width: 731px) {
+  body main .price-box {
+    margin-top: 30px;
+  }
+  body main .price-box-container {
+    width: 366px;
+    margin-top: 82px;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 667px) {
+  body main .price-box h1 {
+    font-size: 32px;
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 568px) {
+  body main .price-box {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 414px) {
+  body main .price-box {
+    margin-top: 30px;
+  }
+  body main .price-box-container {
+    margin-right: 0;
+  }
+  body main .price-box h1 {
+    font-size: 23px;
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 375px) {
+  body main .price-box-container {
+    margin-right: 0;
+  }
+  body main .price-box h1 {
+    font-size: 20px;
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 320px) {
+  body main .price-box-container {
+    margin-right: 0;
+  }
+  body main .price-box h1 {
+    font-size: 18px;
+    padding-top: 20px;
+  }
+}
+
+body section .services {
+  position: relative;
+  max-width: 2040px;
+  height: 850px;
+}
+
+body section .services-box {
+  position: absolute;
+  width: 1920px;
+  height: 678px;
+  background: #005AAD;
+  top: 173px;
+  left: 41px;
+}
+
+body section .services-box-container-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: -77px;
+}
+
+body section .services-box-container-content-item {
+  position: relative;
+  width: 370px;
+  height: 300px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 10px 40px rgba(14, 41, 66, 0.2);
+          box-shadow: 0px 10px 40px rgba(14, 41, 66, 0.2);
+}
+
+body section .services-box-container-content-item img {
+  position: absolute;
+  width: 335px;
+  height: 205px;
+  top: 19px;
+  left: 19px;
+}
+
+body section .services-box-container-content-item h3 {
+  position: absolute;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 130%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  left: 0;
+  right: 0;
+  bottom: 33px;
+  margin: 0 auto;
+}
+
+body section .services-box-container-additional {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 133px;
+}
+
+body section .services-box-container-additional-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body section .services-box-container-additional-box img {
+  width: 66px;
+  height: 66px;
+}
+
+body section .services-box-container-additional-box h3 {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 130%;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+body section .services-box-container-additional-box p {
+  font-family: Suwannaphum;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 130%;
+  text-align: center;
+  color: #E5E5E5;
+}
+
+@media (max-width: 1920px) {
+  body section .services-box {
+    width: 95%;
+  }
+}
+
+@media (max-width: 1024px) {
+  body section .services-box-container-content {
+    margin-top: -110px;
+  }
+  body section .services-box-container-content-item {
+    width: 300px;
+  }
+  body section .services-box-container-content-item img {
+    width: 270px;
+  }
+  body section .services-box-container-content-item h3 {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 823px) {
+  body section .services {
+    height: 539px;
+  }
+  body section .services-box {
+    width: 100%;
+    height: auto;
+    left: 0;
+  }
+  body section .services-box-container-content {
+    margin-top: -110px;
+  }
+  body section .services-box-container-content-item {
+    width: 260px;
+  }
+  body section .services-box-container-content-item img {
+    width: 220px;
+  }
+  body section .services-box-container-content-item h3 {
+    font-size: 15px;
+  }
+  body section .services-box-container-additional {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  body section .services {
+    height: 840px;
+  }
+  body section .services-box-container-content {
+    margin-top: -110px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body section .services-box-container-content-item {
+    width: 330px;
+  }
+  body section .services-box-container-content-item img {
+    width: 290px;
+  }
+  body section .services-box-container-content-item h3 {
+    font-size: 17px;
+  }
+  body section .services-box-container-additional {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 568px) {
+  body section .services-box {
+    width: 100%;
+    height: auto;
+    left: 0;
+  }
+  body section .services-box-container-content {
+    margin-top: -110px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body section .services-box-container-content-item {
+    width: 330px;
+  }
+  body section .services-box-container-content-item img {
+    width: 290px;
+  }
+  body section .services-box-container-content-item h3 {
+    font-size: 17px;
+  }
+  body section .services-box-container-additional {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 414px) {
+  body section .services {
+    height: 1442px;
+  }
+  body section .services-box {
+    width: 100%;
+    height: auto;
+    left: 0;
+  }
+  body section .services-box-container-content {
+    margin-top: -110px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body section .services-box-container-content-item {
+    width: 360px;
+  }
+  body section .services-box-container-content-item img {
+    width: 320px;
+  }
+  body section .services-box-container-content-item h3 {
+    font-size: 17px;
+  }
+  body section .services-box-container-additional {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 375px) {
+  body section .services {
+    height: 1441px;
+  }
+  body section .services-box {
+    width: 100%;
+    left: 0;
+  }
+  body section .services-box-container-content {
+    margin-top: -110px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body section .services-box-container-content-item {
+    width: 330px;
+  }
+  body section .services-box-container-content-item img {
+    width: 290px;
+  }
+  body section .services-box-container-content-item h3 {
+    font-size: 17px;
+  }
+  body section .services-box-container-additional {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 320px) {
+  body section .services-box {
+    width: 100%;
+    height: auto;
+    left: 0;
+  }
+  body section .services-box-container-content {
+    margin-top: -110px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body section .services-box-container-content-item {
+    width: 310px;
+  }
+  body section .services-box-container-content-item img {
+    width: 275px;
+  }
+  body section .services-box-container-content-item h3 {
+    font-size: 17px;
+  }
+  body section .services-box-container-additional {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 25px;
+  }
+}
+
+body section .map {
+  position: relative;
+  max-width: 2040px;
+  height: 613px;
+}
+
+body section .map-box {
+  position: absolute;
+  width: 1920px;
+  height: 613px;
+  left: 41px;
+}
+
+body section .map-box-contacts {
+  position: absolute;
+  width: 570px;
+  height: 363.15px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.08);
+          box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.08);
+  top: 66.74px;
+  left: 375px;
+}
+
+body section .map-box-contacts-info {
+  padding: 71.65px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body section .map-box-contacts-info h1 {
+  font-family: HelveticaNeueCyr;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 130%;
+  color: #000000;
+  margin-bottom: 43.19px;
+}
+
+body section .map-box-contacts-info p {
+  font-family: HelveticaNeueCyr;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  color: #000000;
+  margin-bottom: 9.81px;
+}
+
+@media (max-width: 1920px) {
+  body section .map-box-contacts {
+    width: 450px;
+    left: 335px;
+  }
+}
+
+@media (max-width: 1600px) {
+  body section .map-box-contacts {
+    width: 450px;
+    left: 290px;
+  }
+}
+
+@media (max-width: 1366px) {
+  body section .map-box-contacts {
+    width: 450px;
+    left: 150px;
+  }
+}
+
+@media (max-width: 1024px) {
+  body section .map-box-contacts {
+    width: 450px;
+    top: 140.74px;
+    left: 15px;
+  }
+}
+
+@media (max-width: 823px) {
+  body section .map-box-contacts {
+    width: 450px;
+    height: 271.15px;
+    top: 335px;
+    left: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  body section .map-box-contacts {
+    width: 450px;
+    height: 271.15px;
+    top: 335px;
+    left: 15px;
+  }
+}
+
+@media (max-width: 568px) {
+  body section .map-box-contacts {
+    width: 320px;
+    height: 190px;
+    top: 328px;
+    left: 15px;
+  }
+  body section .map-box-contacts-info {
+    padding: 9.65px;
+  }
+}
+
+@media (max-width: 320px) {
+  body section .map-box-contacts {
+    width: 320px;
+    height: 190px;
+    top: 328px;
+    left: 0;
+  }
+  body section .map-box-contacts-info {
+    padding: 9.65px;
+  }
+}
+
+@media (max-width: 1920px) {
+  body section .map-box {
+    width: 95%;
+  }
+}
+
+@media (max-width: 823px) {
+  body section .map-box {
+    width: 100%;
+    left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  body section .map-box {
+    width: 100%;
+    left: 0;
+  }
+}
+
+@media (max-width: 414px) {
+  body section .map-box {
+    width: 100%;
+    left: 0;
+  }
+}
+
+body footer {
+  max-width: 100%;
+  position: relative;
+}
+
+body footer .box {
+  position: absolute;
+  width: 1920px;
+  height: 87.35px;
+  left: 41px;
+  background: #000000;
+}
+
+body footer .box-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 21.59px;
+}
+
+body footer .box-footer-logo a {
+  display: inline-block;
+  width: 183px;
+  height: 42.2px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+body footer .box-footer-logo a.avtopole {
+  background-image: url(../logo/avtopole_footer.png);
+  background-size: contain;
+}
+
+body footer .box-footer-logo a.suzuki {
+  background-image: url(../logo/suzuki_footer.png);
+  background-size: contain;
+}
+
+body footer .box-footer-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body footer .box-footer-contacts .number {
+  font-family: HelveticaNeueCyr;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 140%;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+body footer .box-footer-contacts .call {
+  position: relative;
+  font-family: HelveticaNeueCyr;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  color: #FFFFFF;
+  text-align: right;
+  text-decoration: none;
+}
+
+body footer .box-footer-contacts .call::after {
+  position: absolute;
+  content: "";
+  width: 54%;
+  right: 0;
+  bottom: 0;
+  border-bottom: 1px dashed #ffffff;
+}
+
+@media (max-width: 1920px) {
+  body footer .box {
+    width: 95%;
+  }
+}
+
+@media (max-width: 1024px) {
+  body footer .box {
+    width: 95%;
+  }
+  body footer .box-footer {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (max-width: 823px) {
+  body footer .box {
+    width: 100%;
+    left: 0;
+  }
+  body footer .box-footer {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (max-width: 768px) {
+  body footer .box {
+    width: 100%;
+    left: 0;
+  }
+  body footer .box-footer {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (max-width: 414px) {
+  body footer .box {
+    width: 100%;
+    height: 150px;
+    left: 0;
+  }
+  body footer .box-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body footer .box-footer-logo a {
+    width: 170px;
+  }
+}
+
+@media (max-width: 320px) {
+  body footer .box {
+    width: 100%;
+    height: 150px;
+    left: 0;
+  }
+  body footer .box-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body footer .box-footer-logo a {
+    width: 140px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
